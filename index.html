@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fantasy Sports Team Builder</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Fantasy Sports Team Builder</h1>
+        <div id="sport-selection">
+            <button onclick="selectSport('football')">Fantasy Football</button>
+            <button onclick="selectSport('cricket')">Fantasy Cricket</button>
+        </div>
+        <div id="team-builder" style="display: none;">
+            <h2 id="sport-title"></h2>
+            <div class="main-content">
+                <div id="available-players"></div>
+                <div id="lineup">
+                    <h3>Team Lineup</h3>
+                    <div id="field">
+                        <!-- Player positions will be dynamically added here -->
+                    </div>
+                </div>
+            </div>
+            <button onclick="addPlayer()">Add Player</button>
+            <button onclick="removePlayer()">Remove Player</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
