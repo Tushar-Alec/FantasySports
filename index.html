@@ -10,8 +10,8 @@
     <div class="container">
         <h1>Fantasy Sports Team Builder</h1>
         <div id="sport-selection">
-            <button onclick="selectSport('football')">Fantasy Football</button>
-            <button onclick="selectSport('cricket')">Fantasy Cricket</button>
+            <button id = "choice-button" onclick="selectSport('football')">Fantasy Football</button>
+            <button id = "choice-button" onclick="selectSport('cricket')">Fantasy Cricket</button>
         </div>
         <div id="team-builder" style="display: none;">
             <h2 id="sport-title"></h2>
@@ -20,12 +20,13 @@
                 <div id="lineup">
                     <h3>Team Lineup</h3>
                     <div id="field">
-                        <!-- Player positions will be dynamically added here -->
+                        
                     </div>
+                    <button onclick="addPlayer()">Add Player</button>
+            <button onclick="removePlayer()">Remove Player</button>
                 </div>
             </div>
-            <button onclick="addPlayer()">Add Player</button>
-            <button onclick="removePlayer()">Remove Player</button>
+            
         </div>
     </div>
     <script src="script.js"></script>
